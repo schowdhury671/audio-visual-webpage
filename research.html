@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research - Audio Processing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="assets/umd.png" alt="UMD Logo" class="logo-left">
+            <h1>Research at GAMMA Lab</h1>
+            <img src="assets/gamma_logo-2.png" alt="GAMMA Lab Logo" class="logo-right">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
+            <li><a href="index.html#people"><i class="fas fa-users"></i> People</a></li>
+            <li><a href="index.html#updates"><i class="fas fa-bullhorn"></i> Updates</a></li>
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+        </ul>
+    </nav>
+
+    <!-- Research Publications Section -->
+    <section class="container">
+            <!-- Projects Sections -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Publications</h2>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Audio Flamingo 3: Advancing Audio Intelligence with Fully Open Large Audio Language Models<br> <span style="color:rgb(0, 26, 255)">Under Review</span></h2>
+                <p>
+                    We present <b>Audio Flamingo 3</b> (AF3), a fully open state-of-the-art (SOTA) large audio-language model that advances reasoning and understanding across speech, sound, and music. AF3 introduces: (i) AF-Whisper, a unified audio encoder trained using a novel strategy for joint representation learning across all 3 modalities of speech, sound, and music; (ii) flexible, on-demand thinking, allowing the model to deliberately think before answering; (iii) multi-turn, multi-audio chat; (iv) long audio understanding and reasoning (including speech) up to 10 minutes; and (v) voice-to-voice interaction. To enable these capabilities, we propose several large-scale training datasets curated using novel strategies, including AudioSkills-XL, LongAudio-XL, AF-Think, and AF-Chat, and train AF3 with a novel five-stage curriculum-based training strategy. AF3 achieves new SOTA results on over 20+ (long) audio understanding and reasoning benchmarks. We will open-source all our code, data, and checkpoints upon paper acceptance.
+                </p>
+                <div class="buttons">
+                    <!-- <a href="" target="_blank" class="btn">arXiv</a> -->
+                    <a href="https://audioflamingo3.github.io/" target="_blank" class="btn">Know More</a>
+                    <!-- <a href="" target="_blank" class="btn">Code</a> -->
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/af3_web.png" alt="AF3 Project Image">
+            </div>
+        </div>
+    </section>
+        <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Audio Flamingo 2: An Audio-Language Model with Long-Audio Understanding and Expert Reasoning Abilities <br> <span style="color:rgb(0, 26, 255)">ICML 2025</span></h2>
+                <p>
+                    We introduce <b>Audio Flamingo 2</b> (AF2), an Audio-Language Model (ALM) with advanced audio understanding and reasoning capabilities. AF2 leverages (i) a custom CLAP model, (ii) synthetic Audio QA data for fine-grained audio reasoning, and (iii) a multi-stage curriculum learning strategy. AF2 achieves state-of-the-art performance with only a 3B parameter small language model, surpassing large open-source and proprietary models across 20+ benchmarks. Next, for the first time, we extend audio understanding to long audio segments (30 secs - 5 mins) and propose <b>LongAudio</b>, a large and novel dataset for training ALMs on long audio captioning and question-answering tasks. Fine-tuning AF2 on LongAudio leads to exceptional performance on our proposed <b>LongAudioBench</b>, an expert annotated benchmark for evaluating ALMs on long audio understanding capabilities. We conduct extensive ablation studies to confirm the efficacy of our approach.
+                </p>
+                <div class="buttons">
+                    <!-- <a href="" target="_blank" class="btn">arXiv</a> -->
+                    <a href="https://arxiv.org/abs/2503.03983" target="_blank" class="btn">arXiv</a>
+                    <a href="https://research.nvidia.com/labs/adlr/AF2/" target="_blank" class="btn">Project Page</a>
+                    <!-- <a href="" target="_blank" class="btn">Code</a> -->
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/af2_web_2.png" alt="AF2 Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>GAMA: A Large Audio-Language Model with Advanced Audio Understanding and Complex Reasoning Abilities <br> <span style="color:rgb(0, 26, 255)">EMNLP 2024</span><span style="color:red"> (Oral)</span></h2>
+                <p>
+                    We propose GAMA, a novel Large Audio-Language Model (LALM) that is capable of responding accurately to complex questions about an input audio. GAMA benefits from a mixture of encoders and synthetic data generated using a novel data generation pipeline we propose. GAMA currently stands as the state-of-the-art LALM on various audio understanding, reasoning, and hallucination benchmarks.
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/abs/2406.11768" target="_blank" class="btn">arXiv</a>
+                    <a href="https://sreyan88.github.io/gamaaudio/" target="_blank" class="btn">Homepage</a>
+                    <a href="https://github.com/Sreyan88/GAMA" target="_blank" class="btn">Code</a>
+                    <a href="https://huggingface.co/spaces/sonalkum/GAMA" target="_blank" class="btn">GAMA Demo</a>
+                    <a href="https://huggingface.co/spaces/sonalkum/GAMA-IT" target="_blank" class="btn">GAMA-IT Demo</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/gama-hero.jpg" alt="GAMA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>MMAU: A Massive Multi-Task Audio Understanding and Reasoning Benchmark <br> <span style="color:rgb(0, 26, 255)">ICLR 2025</span><span style="color:red"> (Spotlight)</h2>
+                <p>
+                    We introduce MMAU (Massive Multi-Task Audio Understanding and Reasoning Benchmark), a comprehensive benchmark 
+                    designed to evaluate Large Audio-Language Models (LALMs) on tasks that demand expert-level knowledge and complex 
+                    reasoning. MMAU includes 10,000 meticulously curated audio clips paired with human-annotated natural language questions 
+                    and answers, covering speech, environmental sounds, and music. The benchmark features information extraction and 
+                    reasoning questions that require models to demonstrate 27 distinct skills across unique and challenging tasks. Notably,
+                     even the advanced Gemini Pro v1.5 achieves only 52.97% accuracy, and the state-of-the-art open-source Qwen2-Audio achieves 52.50%,
+                      underscoring significant potential for improvement.                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2410.19168" target="_blank" class="btn">arXiv</a>
+                    <a href="https://sakshi113.github.io/mmau_homepage/" target="_blank" class="btn">Homepage</a>
+                    <a href="https://github.com/Sakshi113/mmau/tree/main" target="_blank" class="btn">Code</a>
+                    <a href="https://eval.ai/web/challenges/challenge-page/2391/overview" target="_blank" class="btn">EvalAI</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/mmau-hero.jpg" alt="MMAU Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Failing Forward: Improving Generative Error Correction for ASR with Synthetic Data and Retrieval Augmentation <br> <span style="color:rgb(0, 26, 255)">ACL 2025 (Findings)</span> </span></span></h2>
+                <p>Generative Error Correction (GEC) has emerged as a powerful post-processing method to enhance the performance of Automatic Speech Recognition (ASR) systems. However, we show that GEC models struggle to generalize beyond the specific types of errors encountered during training, limiting their ability to correct new, unseen errors at test time, particularly in out-of-domain (OOD) scenarios. This phenomenon amplifies with named entities (NEs), where, in addition to insufficient contextual information or knowledge about the NEs, novel NEs keep emerging. To address these issues, we propose <strong> DARAG (Data- and Retrieval-Augmented Generative Error Correction)</strong>, a novel approach designed to improve GEC for ASR in in-domain (ID) and OOD scenarios. We augment the GEC training dataset with synthetic data generated by prompting LLMs and text-to-speech models, thereby simulating additional errors from which the model can learn. For OOD scenarios, we simulate test-time errors from new domains similarly and in an unsupervised fashion. Additionally, to better handle named entities, we introduce retrieval-augmented correction by augmenting the input with entities retrieved from a database. Our approach is simple, scalable, and both domain- and language-agnostic. We experiment on multiple datasets and settings, showing that DARAG outperforms all our baselines, achieving 8\% -- 30\% relative WER improvements in ID and 10\% -- 33\% improvements in OOD settings.</p>
+
+                <div class="buttons">
+                    <a href="https://arxiv.org/abs/2410.13198" target="_blank" class="btn">arXiv</a>
+                    <!-- <a href="https://research.nvidia.com/labs/adlr/AF2/" target="_blank" class="btn">Know More</a> -->
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/ff_web.png" alt="FF Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>ProSE: Diffusion Priors for Speech Enhancement <br> <span style="color:rgb(0, 26, 255)">NAACL 2025</span> </span></span><span style="color:red"> (Oral)</span></h2>
+                <p>We propose <strong>ProSE</strong> (diffusion-based <span class="highlight">Pr</span>i<span class="highlight">o</span>rs for <span class="highlight">SE</span>), a novel methodology based on an alternative framework for applying diffusion models to SE. Specifically, we first apply DDPMs to generate priors in a latent space due to their powerful distribution mapping capabilities. The priors are then integrated into a transformer-based regression model for SE.
+                    The priors guide the regression model in the enhancement process. Since the diffusion process is applied to a compact latent space, the diffusion model takes fewer iterations than the traditional DM to obtain accurate estimations. Additionally, using a regression model for SE avoids the distortion issue caused by misaligned details generated by DMs.</p>
+
+                <div class="buttons">
+                    <a href="https://openreview.net/pdf?id=7lAoYRrEcw" target="_blank" class="btn">arXiv</a>
+                    <!-- <a href="https://research.nvidia.com/labs/adlr/AF2/" target="_blank" class="btn">Know More</a> -->
+                    <a href="https://github.com/sonalkum/ProSE" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/prose_web.png" alt="GAMA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>MULTIVOX: A Benchmark for Evaluating Voice Assistants for Multimodal Interactions <br> <span style="color:rgb(0, 26, 255)">Under Review</span></h2>
+                <p>The rapid progress of Large Language Models (LLMs) has empowered omni models to act as voice assistants capable of understanding spoken dialogues. These models can process multimodal inputs beyond text, such as speech and visual data, enabling more context-aware interactions. However, current benchmarks fall short in comprehensively evaluating how well these models generate context-aware responses, particularly when it comes to implicitly understanding fine-grained speech characteristics, such as pitch, emotion, timbre, and volume or the environmental acoustic context such as background sounds. Additionally, they inadequately assess the ability of models to align paralinguistic cues with complementary visual signals to inform their responses. To address these gaps, we introduce MultiVox, the first omni voice assistant benchmark designed to evaluate the ability of voice assistants to integrate spoken and visual cues including paralinguistic speech features for truly multimodal understanding. Specifically, MultiVox includes 1000 human-annotated and recorded speech dialogues that encompass diverse paralinguistic features and a range of visual cues such as images and videos. Our evaluation on 9 state-of-the-art models reveals that, although humans excel at these tasks, current models consistently struggle to produce contextually grounded responses. Our benchmark will be open-sourced. </p>
+
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1CcS0B49LCKRWLexfOlqTsyl_HvJXrxZ_/view?usp=sharing" target="_blank" class="btn">Paper</a>
+                    <!-- <a href="https://research.nvidia.com/labs/adlr/AF2/" target="_blank" class="btn">Know More</a> -->
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/vox_web.png" alt="Vox Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>CompA: Addressing the Gap in Compositional Reasoning in Audio-Language Models <br> <span style="color:rgb(0, 26, 255)">ICLR 2024</span></h2>
+                <p>We introduce CompA, a benchmark specifically designed to address gaps in compositional reasoning in 
+                    audio-language models (ALMs). CompA includes two expert-annotated benchmarks: CompA-order, which evaluates 
+                    how well an ALM understands the sequence of acoustic events, and CompA-attribute, which tests the model’s ability 
+                    to associate attributes with specific sounds. Each test instance contains audio-caption pairs with the same events 
+                    but in varying compositions, challenging the model to match audio accurately to captions. Using CompA, we demonstrate 
+                    that current ALMs, including CLAP, struggle with complex compositional reasoning. To improve performance, we propose 
+                    CompA-CLAP, a fine-tuned model that leverages compositionally-aware hard negatives and a new modular contrastive learning 
+                    objective, significantly enhancing compositional reasoning capabilities across both benchmarks.</p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2310.08753" target="_blank" class="btn">arXiv</a>
+                    <a href="https://sreyan88.github.io/compa_iclr/" target="_blank" class="btn">Homepage</a>
+                    <a href="https://github.com/Sreyan88/CompA" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/compa.png" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Synthio: Augmenting Small-Scale Audio Classification Datasets with Synthetic Data <br> <span style="color:rgb(0, 26, 255)"> ICLR 2025</span></h2>
+                <p>We present Synthio, a novel method for generating synthetic data specifically for audio classification. 
+                    Our approach first involves aligning a Text-to-Audio generation model with the target dataset through 
+                    preference optimization. We then introduce an iterative prompting method with large language models (LLMs) 
+                    to generate diverse and consistent audio captions, which are used to prompt the Text-to-Audio generation model 
+                    for synthetic data creation. By augmenting small-scale audio classification datasets with data generated by Synthio,
+                     we achieve up to a 39% performance improvement on benchmark datasets.</p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2410.02056" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/Sreyan88/Synthio" target="_blank" class="btn">Code</a>
+                    <a href="https://huggingface.co/spaces/sonalkum/synthio-stable-audio-open" target="_blank" class="btn">Demo</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/synthio.jpg" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>PAT: Parameter-Free Audio-Text Aligner to Boost Zero-Shot Audio Classification <br> <span style="color:rgb(0, 26, 255)"> NAACL 2025</span><span style="color:red"> (Oral)</span></h2>
+                <p>We introduce PAT (Parameter-free Audio-Text aligner), a novel training and parameter-free method designed to 
+                    boost zero-shot audio classification performance with audio-language models. PAT achieves this by improving
+                     test-time audio-text alignment, enhancing representations for both modalities through mutual feedback. PAT 
+                     outperforms vanilla zero-shot audio classification with significant margins of 0.42%-27.0%.</p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2410.15062" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/cs20s030/PAT" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/pat.jpg" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>EH-MAM: Easy-to-Hard Masked Acoustic Modeling for Self-Supervised Speech Representation Learning <br> <span style="color:rgb(0, 26, 255)"> EMNLP 2025</span><span style="color:red"> (Oral)</span></h2>
+                <p>We introduce EH-MAM (Easy-to-Hard adaptive Masked Acoustic Modeling), a novel self-supervised approach for speech representation learning.
+                    EH-MAM enables better learning from unsupervised data by using an adaptive masking strategy that gradually increases the difficulty of the p
+                    re-text SSL task and selectively reconstructing challenging regions within the speech input. EH-MAM outperforms several state-of-the-art baselines across various low-resource speech recognition and SUPERB benchmarks
+                    by 5%-10%.</p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2410.13179" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/cs20s030/ehmam" target="_blank" class="btn">Code</a>
+                    <a href="https://drive.google.com/file/d/1Rx4MpeN1-0xjjKXx5zbJMCCvGLdVe1nr/view?usp=sharing" target="_blank" class="btn">Checkpoint</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/eh-mam.jpg" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Do Audio-Language Models Understand Linguistic Variations? <br>  <span style="color:rgb(0, 26, 255)"> NAACL 2025</span></h2>
+                <p>We propose RobustCLAP, a compute-efficient technique that enhances audio-language representations to be robust to linguistic 
+                    variations. We observe that existing ALMs struggle to generalize effectively to linguistically diverse textual queries. 
+                    RobustCLAP addresses this challenge by reformulating the contrastive loss in CLAP architectures with a multi-view 
+                    contrastive learning objective. This approach improves text-to-audio retrieval performance by 0.8%-13% across various benchmarks.</p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2410.16505" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/ramaneswaran/linguistic_robust_clap" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/robust.jpg" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>ReCLAP: Improving Zero Shot Audio Classification by Describing Sounds <br> <span style="color:rgb(0, 26, 255)"> ICASSP 2025</span></h2>
+                <p>We present ReCLAP, a nvel approach to enhance zero-shot audio classification performance in 
+                    CLAP-like Audio-Language Models. Our method first involves training a CLAP model using a unique 
+                    caption augmentation technique, where audio captions are rewritten to describe individual acoustic 
+                    events from an auditory perspective. To further improve zero-shot audio classification, we introduce 
+                    a novel prompt augmentation strategy that generates custom prompts for each category by rephrasing labels 
+                    to describe sounds associated with each category. ReCLAP achieves state-of-the-art performance on retrieval 
+                    benchmarks and boosts zero-shot audio classification accuracy by 1%-18% across seven zero-shot classification benchmarks.</p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2409.09213" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/Sreyan88/ReCLA" target="_blank" class="btn">Code</a>
+                    <a href="https://drive.google.com/drive/folders/1ZUf3HNo8wO2Ec6_cfQ0nc1fUknkHSP9e?usp=sharing" target="_blank", class="btn">Checkpoints</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/reclap.jpg" alt="CompA Project Image" style="height: 450px; width: 400px; margin-left: 50px;">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>TSPE: Task-Specific Prompt Ensemble for Improved Zero-Shot Audio Classification <br> <span style="color:rgb(0, 26, 255)">ICASSP 2025 SALMA Workshop</span></h2>
+                </h2>
+                <p>We introduce TSPE (Task-Specific Prompt Ensemble), a novel training-free approach to enhance zero-shot audio classification performance of Audio-Language Models (ALMs). Unlike generic text prompts, TSPE generates context-rich, task-specific prompts by incorporating key sound attributes and sources, improving audio-text alignment. We show that TSPE significantly improves performance across 12 diverse audio classification datasets, achieving an absolute accuracy improvement of upto 16.36% compared to standard zero-shot evaluations.</p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/abs/2501.00398" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/nishitanand/TSPE" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/TSPE_diagram.png" alt="TSPE Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>SILA: Signal-to-Language Augmentation for Enhanced Control in Text-to-Audio Generation <br> <span style="color:rgb(0, 26, 255)">Under Review</span></h2>
+                </h2>
+                <p>The field of text-to-audio generation has seen significant advancements, and yet the ability to finely control the acoustic characteristics of generated audio remains under-explored. In this paper, we introduce a novel yet simple approach to generate sound effects with control over key acoustic parameters such as loudness, pitch, reverb, fade, brightness, noise and duration, enabling creative applications in sound design and content creation. These parameters extend beyond traditional Digital Signal Processing (DSP) techniques, incorporating learned representations that capture the subtleties of how sound characteristics can be shaped in context, enabling a richer and more nuanced control over the generated audio. Our approach is model-agnostic and is based on learning the disentanglement between audio semantics and its acoustic features. Our approach not only enhances the versatility and expressiveness of text-to-audio generation but also opens new avenues for creative audio production and sound design. Our objective and subjective evaluation results demonstrate the effectiveness of our approach in producing high-quality, customizable audio outputs that align closely with user specifications.</p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/abs/2412.09789" target="_blank" class="btn">arXiv</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/sila_web.png" alt="SILA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>SLICER: Symmetrical Learning of Instance and Cluster-level Efficient Representations <br> <span style="color:rgb(0, 26, 255)"> ICASSP 2023</span></h2>
+                <p>We introduce SLICER (Symmetrical Learning of Instance and Cluster-level Efficient Representations), a Self-Supervised Learning approach for pre-training audio encoders on unlabeled data to enhance generalization across diverse audio processing tasks. SLICER learns fine-grained audio representations by combining clustering and contrastive learning with a symmetric loss between student and teacher encoders. SLICER sets state-of-the-art results on the LAPE Benchmark, surpassing prior methods trained on larger datasets.
+                </p>
+                <div class="buttons">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10096970" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/Sreyan88/audio-ssl" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/slicer.jpg" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>MAST: Multiscale Audio Spectrogram Transformer</h2>
+                <p>We introduce MAST (Multiscale Audio Spectrogram Transformer), a novel audio encoder that incorporates multiscale feature hierarchies into the Audio Spectrogram Transformer (AST). MAST progressively expands embedding dimensions while reducing temporal resolution, using a pyramid structure to capture both low-level acoustic details in early layers and high-level features in deeper layers. MAST shows its effectiveness by achieving a 3.4% average accuracy gain over AST across various downstream tasks.
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2211.01515" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/Sreyan88/LAPE" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/mast_final.png" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Stable Distillation: Regularizing Continued Pre-training for Low-Resource Automatic Speech Recognition</h2>
+                <p>We introduce Stable Distillation, a novel approach for continued self-supervised learning (SSL) pre-training aimed at adapting SSL models to low-resource Automatic Speech Recognition (ASR) domains. Our method leverages self-distillation as a regularization technique to address mismatches between source and target domains. Specifically, we first conduct standard continued pre-training on a target ASR dataset to develop a "teacher" model, which is then used as a "student" to replicate the teacher's representations. Our proposed method achieves performance improvements of 0.8–7% on existing speech encoders across various low-resource ASR settings.
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/abs/2312.12783" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/cs20s030/stable_distillation" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/stable_distillation_final.jpg" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>FusDom: Combining In-Domain and Out-of-Domain Knowledge for Continuous Self-Supervised Learning
+                </h2>
+                <p>We introduce FusDom, a novel approach for continued pre-training in self-supervised learning (SSL) to enhance Automatic Speech Recognition (ASR) performance without catastrophic forgetting. FusDom adapts SSL models to target domains while preserving knowledge from prior domains by jointly utilizing two identical SSL models, a teacher and a student, connected by a cross-attention head that solves the pre-task for continued pre-training. FusDom shows its robustness by significantly improving target domains' ASR performance (0.2%–7.3%) while maintaining source domain performance.</p>
+                <div class="buttons">
+                    <a href=" https://arxiv.org/abs/2312.13026" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/cs20s030/fusdom" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/Fusdom_fine.png" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>FusDom: Combining In-Domain and Out-of-Domain Knowledge for Continuous Self-Supervised Learning
+                </h2>
+                <p>We introduce FusDom, a novel approach for continued pre-training in self-supervised learning (SSL) to enhance Automatic Speech Recognition (ASR) performance without catastrophic forgetting. FusDom adapts SSL models to target domains while preserving knowledge from prior domains by jointly utilizing two identical SSL models, a teacher and a student, connected by a cross-attention head that solves the pre-task for continued pre-training. FusDom shows its robustness by significantly improving target domains' ASR performance (0.2%–7.3%) while maintaining source domain performance.</p>
+                <div class="buttons">
+                    <a href=" https://arxiv.org/abs/2312.13026" target="_blank" class="btn">arXiv</a>
+                    <a href="https://github.com/cs20s030/fusdom" target="_blank" class="btn">Code</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/Fusdom_fine.png" alt="CompA Project Image">
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 UMD GAMMA</p>
+    </footer>
+
+</body>
+</html>

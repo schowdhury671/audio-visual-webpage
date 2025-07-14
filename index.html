@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Processing in Large Audio Language Models</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="assets/umd.png" alt="UMD Logo" class="logo-left">
+            <h1>Audio Processing in the Age of Large Language Models</h1>
+            <img src="assets/gamma_logo-2.png" alt="GAMMA Lab Logo" class="logo-right">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
+            <li><a href="index.html#people"><i class="fas fa-users"></i> People</a></li>
+            <li><a href="index.html#updates"><i class="fas fa-bullhorn"></i> Updates</a></li>
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section 1 -->
+    <!-- Introduction Section -->
+<section class="intro-section">
+    <div class="container">
+        <h2>Our Goal</h2>
+        <!-- First Paragraph: Full Width -->
+        <p class="full-width">
+            Audio comprehension—including speech, non-speech sounds, and music—is essential for AI agents to interact effectively with the world. Yet, research in audio processing has lagged behind other areas like language and vision, hindered by limited datasets, the need for advanced architectures, and training methods suited to the inherent complexities of audio. However, the rise of Large Language Models (LLMs) offers promising new directions, as they have shown remarkable ability to understand and reason about the world through language, pushing forward foundational audio tasks like Automatic Speech Recognition (ASR), cross-modal retrieval, and audio captioning. While essential, these tasks only scratch the surface of true, complex reasoning needed to reach intelligence levels comparable to skilled human cognition.
+        </p>
+        <!-- Wrapper for Image and Subsequent Paragraphs -->
+        <div class="text-image-wrapper">
+            <img src="assets/GAMA_hero.jpeg" alt="GAMA Hero Image" class="intro-image">
+            <p>
+                At GAMMA Lab, UMD, we aim to bridge this gap with a range of innovative solutions, starting with GAMA (EMNLP 2024), our large audio-language model designed for advanced audio perception and complex reasoning. GAMA is built with a specialized architecture, optimized audio encoding, and a novel alignment dataset, positioning it as a leader across benchmarks for audio understanding, reasoning, and hallucination reduction. Good representations are key to advancing perception and GAMA’s development builds on our past achievements, such as MAST and SLICER (ICASSP 2023) and EH-MAM (EMNLP 2024), which pioneered approaches for learning strong audio representations from unlabeled data. Complementing this, we introduced ReCLAP, a state-of-the-art audio-language encoder, and CompA, one of the first projects to tackle compositional reasoning in audio-language models—a critical challenge given audio’s inherently compositional nature.
+            </p>
+            <p>
+                Looking forward, we envision LALMs becoming integral to daily life, capable of conversational speech QA, information-extraction-based QA, and addressing knowledge-driven questions about diverse audio inputs. We aim to extend GAMA to process longer audio inputs beyond 30 seconds, and ultimately, to interpret multimodal content by integrating visual input, enabling complex question-answering over long video content. Achieving these ambitious goals requires both advanced data and architectures. Synthio, our latest synthetic data generation framework, supports this mission by generating data for complex audio understanding. Progress must also be measurable, so we’re dedicated to establishing comprehensive benchmarks. Our recent release, MMAU, rigorously tests LALMs on real-world tasks, and we plan to roll out additional benchmarks focusing on advanced reasoning over long and multi-audio scenarios.
+            </p>
+            <p>
+                Together with open-source resources, advanced audio-language models, encoders, and synthetic data frameworks, we are accelerating audio-language intelligence to meet the demands of tomorrow’s AI applications.
+            </p>
+        </div>
+    </div>
+        <div id="people" class="container custom-spacing">
+            <div><h2>People</h2></div>       
+        </div>
+        <div class="container custom-spacing">    
+            <div><h3 class="subtle-header">GAMMA Lab @ Department of Computer Science, UMD</h3>
+                
+            </div>
+        </div>
+        <section class="container">
+        <div class="advisor-section">
+            <div class="advisor-member">
+                <a href="https://www.cs.umd.edu/people/dmanocha">
+                <img src="people/dinesh.jpg" alt="Advisor's Name" class="advisor-headshot">
+                <p class="advisor-name">Prof. Dinesh Manocha</p>
+            </a>
+            </div>
+        </div>
+        <div class="team-wrapper">
+            <div class="container">
+                <h3 class="team-section-title">PhD Students</h3>
+                <div class="team-section">
+                    <!-- Repeat this block for each person -->
+                    <div class="team-member">
+                        <a href="https://sakshi113.github.io/">
+                            <img src="people/sakshi-sf2.jpeg" alt="Person's Name2 Headshot" class="team-headshot">
+                            <p class="team-name">Sakshi</p>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="https://sreyan88.github.io/research/">
+                            <img src="people/sreyan-2.jpg" alt="Person's Name2 Headshot" class="team-headshot">
+                            <p class="team-name">Sreyan Ghosh</p>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="https://sonalkum.github.io">
+                            <img src="people/sonal.png" alt="Person's Name2 Headshot" class="team-headshot">
+                            <p class="team-name">Sonal Kumar</p>
+                        </a>
+                    </div>
+                    <div class="team-member">
+                        <a href="https://cs20s030.github.io/">
+                            <img src="people/ashish.jpeg" alt="Person's Name Headshot" class="team-headshot">
+                            <p class="team-name">Ashish Seth</p>
+                        </a>
+                    </div>   
+                </div>
+                <h3 class="team-section-title">Masters Students</h3>
+                <div class="team-section">
+                    <!-- Repeat this block for each person -->
+                    <div class="team-member">
+                        <a href="https://nishitanand.github.io/">
+                            <img src="people/nishit.jpg" alt="Person's Name2 Headshot" class="team-headshot">
+                            <p class="team-name">Nishit Anand</p>
+                        </a>
+                    </div>
+                    
+                    <div class="team-member">
+                        <a href="https://ramaneswaran.github.io/">
+                            <img src="people/raman.jpg" alt="Person's Name2 Headshot" class="team-headshot">
+                            <p class="team-name">Ramaneswaran S.</p>
+                        </a>
+                    </div>
+
+                    <!-- <div class="team-member">
+                        <a href="https://utkarsh4430.github.io/">
+                            <img src="people/utkarsh.jpeg" alt="Person's Name2 Headshot" class="team-headshot">
+                            <p class="team-name">Utkarsh Tyagi</p>
+                        </a>
+                    </div> -->
+                    
+                      
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+    <!-- Announcement Section -->
+    <section class="updates-section" id="updates">
+        <div class="container">
+            <h2>Updates!</h2>
+            <div class="updates-content">
+                <p><strong>Jan 2025:</strong> 3 papers accepted to ICLR 2025!</p>
+                <p><strong>Jan 2025:</strong> 3 papers accepted to NAACL 2025!</p>
+                <p><strong>Jan 2025:</strong> 3 PAPERS have been accepted to ICASSP 2025!</p>
+                <p><strong>Sept 2024:</strong> We released <a href="https://sakshi113.github.io/mmau_homepage/">MMAU</a>, the most comprehensive audio understanding and reasoning benchmark yet!</p>
+                <p><strong>Sept 2024:</strong> 2 papers accepted to EMNLP 2024 as oral presentations!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Repeat the above project section for each project, updating content and links accordingly -->
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 UMD GAMMA Lab</p>
+    </footer>
+
+    <!-- Optional JavaScript for Interactive Effects -->
+    <script src="script.js"></script>
+</body>
+</html>
