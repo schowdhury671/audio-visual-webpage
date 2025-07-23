@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research - Audio-Visual Processing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="assets/umd.png" alt="UMD Logo" class="logo-left">
+            <h1>Research at GAMMA Lab</h1>
+            <img src="assets/gamma_logo-2.png" alt="GAMMA Lab Logo" class="logo-right">
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="research.html"><i class="fas fa-flask"></i> Research</a></li>
+	          <li><a href="dataset.html"><i class="fas fa-flask"></i> Datasets</a></li>
+            <li><a href="index.html#people"><i class="fas fa-users"></i> People</a></li>
+            <li><a href="index.html#updates"><i class="fas fa-bullhorn"></i> Updates</a></li>
+            <li><a href="events.html"><i class="fas fa-calendar-alt"></i> Events</a></li>
+        </ul>
+    </nav>
+
+    <!-- Research Publications Section -->
+    <section class="container">
+            <!-- Projects Sections -->
+    <section class="intro-section">
+        <div class="container">
+            <h2>Publications</h2>
+        </div>
+    </section>
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>MAGNET: A Multi-agent Framework for Finding Audio-Visual Needles by Reasoning over Multi-Video Haystacks<br> <span style="color:rgb(0, 26, 255)">Under Review</span></h2>
+                <p>
+                    Large multimodal models (LMMs) have shown remarkable progress in audio-visual understanding, yet they struggle with real-world scenarios that require complex reasoning across extensive video collections. Existing benchmarks for video question answering remain limited in scope, typically involving one clip per query, which falls short of representing the challenges of large-scale, audio-visual retrieval and reasoning encountered in practical applications. To bridge this gap, we introduce a novel task named AV-HaystacksQA, where the goal is to identify salient segments across different videos in response to a query and link them together to generate the most informative answer. To this end, we present AVHaystacks, an audio-visual benchmark comprising 3100 annotated QA pairs designed to assess the capabilities of LMMs in multi-video retrieval and temporal grounding task. Additionally, we propose a model-agnostic, multi-agent framework MAGNET to address this challenge, achieving up to 89% and 65% relative improvements over baseline methods on BLEU@4 and GPT evaluation scores in QA task on our proposed AVHaystacks. To enable robust evaluation of multi-video retrieval and temporal grounding for optimal response generation, we introduce two new metrics, STEM, which captures alignment errors between a ground truth and a predicted step sequence and MTGS, to facilitate balanced and interpretable evaluation of segment-level grounding performance.
+                </p>
+                <div class="buttons">
+                    <a href="https://www.arxiv.org/pdf/2506.07016" target="_blank" class="btn">Paper</a>
+                    <a href="https://schowdhury671.github.io/magnet_project/" target="_blank" class="btn">Project Page</a>
+                    <!-- <a href="" target="_blank" class="btn">Code</a> -->
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/magnet.png" alt="magnet Project Image">
+            </div>
+        </div>
+    </section>
+        
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>AURELIA: Test-time Reasoning Distillation in Audio-Visual LLMs <br> <span style="color:rgb(0, 26, 255)">ICCV 2025</span></h2>
+                </h2>
+                <p>
+                    In this paper, we introduce AURELIA, a novel actor-critic based audio-visual reasoning framework that distils structured, step-by-step reasoning into 
+		AVLLMs at test time, improving their ability to process
+		complex multi-modal inputs without additional training or
+		fine-tuning. To further advance AVLLM reasoning skills, we
+		present AVReasonBench, a challenging benchmark comprising 4500 audio-visual questions, each paired with detailed
+		step-by-step reasoning. Our benchmark spans six distinct
+		tasks, including AV-GeoIQ, which evaluates AV reasoning
+		combined with geographical and cultural knowledge.
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/pdf/2503.23219" target="_blank" class="btn">Paper</a>
+                    <a href="https://schowdhury671.github.io/aurelia_project/" target="_blank" class="btn">Project Page</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/aurelia.png" alt="Aurelia Project Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>AVTrustBench: Assessing and Enhancing Reliability and Robustness in Audio-Visual LLMs <br> <span style="color:rgb(0, 26, 255)">ICCV 2025</span></h2>
+                </h2>
+                <p>
+                    We introduce Audio-Visual Trustworthiness assessment Benchmark (AVTrustBench), comprising 600K samples spanning over 9 meticulously crafted tasks, evaluating the capabilities of AVLLMs across three distinct dimensions: Adversarial attack, Compositional reasoning, and Modality-specific dependency. Using our benchmark we extensively evaluate 16 state-of-the-art AVLLMs. The findings reveal that the majority of existing models fall significantly short of achieving human-like comprehension, offering valuable insights for future research directions. To alleviate the limitations in the existing approaches, we further propose a robust, model-agnostic calibrated audio-visual preference optimization based training strategy CAVPref, obtaining a gain up to 30.19% across all 9 tasks. 
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/abs/2501.02135" target="_blank" class="btn">Paper</a>
+                    <a href="https://schowdhury671.github.io/avtrustbench_project/" target="_blank" class="btn">Project Page</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/avtrustbench.png" alt="AVTrustBench Project Image">
+            </div>
+        </div>
+    </section>
+
+<section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>EgoAdapt: Adaptive Multisensory Distillation and Policy Learning for Efficient Egocentric Perception <br> <span style="color:rgb(0, 26, 255)">ICCV 2025</span></h2>
+                </h2>
+                <p>
+                    Modern perception models, particularly those designed for multisensory egocentric tasks, have achieved remarkable performance but often come with substantial computational costs. These high demands pose challenges for real-world deployment, especially in resource-constrained environments. In this paper, we introduce EgoAdapt, a framework that adaptively performs cross-modal distillation and policy learning to enable efficient inference across different egocentric perception tasks, including egocentric action recognition, active speaker localization, and behavior anticipation. Our proposed policy module is adaptable to task-specific action spaces, making it broadly applicable. Experimental results on three challenging egocentric datasets EPIC-Kitchens, EasyCom, and Aria Everyday Activities demonstrate that our method significantly enhances efficiency, reducing GMACs by up to 89.09%, parameters up to 82.02%, and energy up to 9.6x, while still on-par and in many cases outperforming, the performance of corresponding state-of-the-art models.
+                </p>
+                <div class="buttons">
+                    <a href="https://arxiv.org/abs/2506.21080" target="_blank" class="btn">Paper</a>
+<!--                     <a href="https://schowdhury671.github.io/avtrustbench_project/" target="_blank" class="btn">Project Page</a> -->
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/egoadapt.png" alt="EgoAdapt Project Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>Meerkat: Audio-Visual Large Language Model for Grounding in Space and Time <br> <span style="color:rgb(0, 26, 255)">ECCV 2024</span></h2>
+                </h2>
+                <p>
+                    We present Meerkat, an audio-visual LLM equipped with a
+		fine-grained understanding of image and audio both spatially and temporally.
+		With a new modality alignment module based on optimal transport and a
+		cross-attention module that enforces audio-visual consistency, Meerkat can
+		tackle challenging tasks such as audio referred image grounding, image guided
+		audio temporal localization, and audio-visual fact-checking. Moreover, we
+		carefully curate a large dataset AVFIT that comprises 3M instruction tuning
+		samples collected from open-source datasets, and introduce MeerkatBench that
+		unifies five challenging audio-visual tasks.  
+                </p>
+                <div class="buttons">
+                    <a href="https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/08071.pdf" target="_blank" class="btn">Paper</a>
+                    <a href="https://schowdhury671.github.io/meerkat_project/" target="_blank" class="btn">Project Page</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/meerkat.png" alt="Meerkat Project Image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>MeLFusion: Synthesizing Music from Image and Language Cues using Diffusion Models<br> <span style="color:rgb(0, 26, 255)">CVPR 2024 (Highlight)</span></h2>
+                </h2>
+                <p>
+                    We propose MeLFusion, a model that can effectively use cues from a textual description and the corresponding image to synthesize music. MeLFusion is a text-to-music diffusion model with a novel "visual synapse", which effectively infuses the semantics from the visual modality into the generated music. To facilitate research in this area, we introduce a new dataset MeLBench, and propose a new evaluation metric IMSM. 
+                </p>
+                <div class="buttons">
+                    <a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Chowdhury_MeLFusion_Synthesizing_Music_from_Image_and_Language_Cues_using_Diffusion_CVPR_2024_paper.pdf" target="_blank" class="btn">Paper</a>
+                    <a href="https://schowdhury671.github.io/melfusion_cvpr2024/" target="_blank" class="btn">Project Page</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/melfusion.png" alt="Melfusion Project Image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="project-section">
+        <div class="container">
+            <div class="text-content">
+                <h2>AdVerb: Visually Guided Audio Dereverberation <br> <span style="color:rgb(0, 26, 255)">ICCV 2023 </span></h2>
+                </h2>
+                <p>
+                    We present AdVerb, a novel audio-visual dereverberation framework that uses visual cues in addition to the reverberant sound to estimate clean audio. Although audio-only dereverberation is a well-studied problem, our approach incorporates the complementary visual modality to perform audio dereverberation. Given an image of the environment where the reverberated sound signal has been recorded, AdVerb employs a novel geometry-aware cross-modal transformer architecture that captures scene geometry and audio-visual cross-modal relationship to generate a complex ideal ratio mask, which, when applied to the reverberant audio predicts the clean sound. The effectiveness of our method is demonstrated through extensive quantitative and qualitative evaluations. Our approach significantly outperforms traditional audio-only and audio-visual baselines on three downstream tasks: speech enhancement, speech recognition, and speaker verification, with relative improvements in the range of 18% - 82% on the LibriSpeech test-clean set. We also achieve highly satisfactory RT60 error scores on the AVSpeech dataset.
+                </p>
+                <div class="buttons">
+                    <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chowdhury_AdVerb_Visually_Guided_Audio_Dereverberation_ICCV_2023_paper.pdf" target="_blank" class="btn">Paper</a>
+                    <a href="https://schowdhury671.github.io/adverb/" target="_blank" class="btn">Project Page</a>
+                </div>
+            </div>
+            <div class="image-content">
+                <img src="assets/adverb.png" alt="Adverb Project Image">
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 UMD GAMMA</p>
+    </footer>
+
+</body>
+</html>
